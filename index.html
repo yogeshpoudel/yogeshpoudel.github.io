@@ -8,125 +8,172 @@
   <link rel="icon" href="favicon.png">
   <script src ="js/clock.js"></script>
 </head>
-<body>
-   <div id="clock"></div>   
-
-  <style>
-    :root{
-      --primary:#1D4ED8;   /* headings */
-      --secondary:#14B8A6; /* highlights */
-      --accent:#F59E0B;    /* CTA */
-      --bg:#F3F4F6;        /* page background */
-      --text:#111827;      /* body text */
-      --maxw:1000px;
-      --radius:10px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:'Lato',system-ui,Arial;display:flex;justify-content:center;padding:28px;}
-    .wrap{width:100%;max-width:var(--maxw);background:#fff;border-radius:12px;padding:28px;box-shadow:0 6px 24px rgba(2,6,23,0.06)}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{font-family:'Poppins';color:var(--primary);font-size:20px;text-decoration:none}
-    nav{display:flex;gap:12px;font-weight:600}
-    nav a{color:var(--text);text-decoration:none;font-size:14px}
-    #clock{font-weight:700;color:var(--secondary);font-family:'Montserrat';}
-
-    /* hero */
-    .hero{display:flex;gap:20px;align-items:center;margin-top:18px}
-    .intro{flex:1}
-    h1{font-family:'Poppins';color:var(--primary);font-size:34px;margin:0}
-    p.lead{margin:8px 0 0;font-size:16px;color:rgba(17,24,39,0.8)}
-    .cta{display:inline-block;margin-top:14px;background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
-
-    /* quick profile card */
-    .card{width:260px;background:linear-gradient(180deg, #fff, #fbfdff);border-radius:var(--radius);padding:14px;text-align:center;border:1px solid rgba(17,24,39,0.04)}
-    .avatar{width:120px;height:120px;border-radius:12px;object-fit:cover;margin:0 auto 8px;display:block}
-    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(20,184,166,0.08);color:var(--secondary);font-weight:700}
-
-    /* sections */
-    section{margin-top:24px}
-    h2{font-family:'Montserrat';color:var(--primary);margin:0 0 10px;font-size:22px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .proj{background:#fff;border-radius:10px;padding:12px;border:1px solid rgba(17,24,39,0.04)}
-    .proj h3{margin:0;font-size:16px}
-    .proj p{margin:6px 0 0;font-size:13px;color:rgba(17,24,39,0.7)}
-
-    /* contact */
-    .contact{display:flex;gap:12px;align-items:center}
-    .contact a{color:var(--primary);text-decoration:none;font-weight:700}
-
-    /* responsive */
-    @media (max-width:880px){
-      .grid{grid-template-columns:repeat(2,1fr)}
-      .hero{flex-direction:column}
-      .card{width:100%}
-    }
-    @media (max-width:520px){
-      .grid{grid-template-columns:1fr}
-      nav{display:none}
-    }
-  </style>
- 
-
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <a class="logo" href="#">Yogesh Poudel</a>
-        <nav aria-label="Main">
-          <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+  <header>
+   <div id="clock"></div>  
       <!-- Clock will appear here -->
        
       <div id="clock"></div>
     </header>
 
-    <!-- Hero -->
-    <div class="hero">
-      <div class="intro">
-        <h1>Hi — I'm Yogesh</h1>
-        <p class="lead">ITBBA student at Haaga-Helia (from Nepal). I combine business thinking with growing web skills — wireframes, digital service plans and marketing projects. Open to internships and teamwork.</p>
-        <a class="cta" href="#contact">Contact me</a>
-      </div>
 
-      <aside class="card" aria-hidden="false">
-        <img class="avatar" src="https://via.placeholder.com/240x240.png?text=Yogesh+Poudel" alt="Yogesh Poudel">
-        <div style="font-weight:700">Yogesh Poudel</div>
-        <div class="tag" style="margin-top:8px">ITBBA • Haaga-Helia</div>
-        <div style="margin-top:8px;font-size:13px;color:rgba(17,24,39,0.7)">Nepal → Helsinki (studies). Skills: Prototyping • Marketing • HTML/CSS basics</div>
-      </aside>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Y &lt;/&gt; YOGESH POUDEL</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Short portfolio -->
-    <section id="portfolio">
-      <h2>Selected work</h2>
-      <div class="grid">
-        <div class="proj">
-          <h3>Marketing Mix — Nike</h3>
-          <p>Course assignment: product, price, place, promotion analysis and SWOT with recommendations for student segment.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm Yogesh Poudel</h1>
+            <p>ITBBA Student at Haaga-Helia UAS</p>
+            <p>Creating innovative solutions through code and design</p>
+            <p> I am passionate about the intersection of technology and business — using IT to drive innovation, solve problems, and create value.
+          This portfolio showcases my journey, skills, and projects as I grow into a future IT professional.</p>
+            <div style="margin-top: 30px;">
+                <a href="#project" class="btn">View My Work</a>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
         </div>
-        <div class="proj">
-          <h3>Portfolio Wireframe</h3>
-          <p>Mobile-first wireframes and prototype for a personal site (Figma + notes on accessibility).</p>
-        </div>
-        <div class="proj">
-          <h3>Digital Service Plan</h3>
-          <p>Teamwork: service blueprint, user journeys and MVP roadmap — practical course deliverable.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Contact -->
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Journey in IT & Business</h3>
+                    <p>My name is Yogesh Poudel and I am a student of Haaga-Helia University of Applied Sciences where I am enrolled in a degree course of Information Technology and Business (ITBBA). I did my higher secondary in Nepal where I developed the interest of technology.</p>
+                    <p>I take great interest in the intersection of technology and business, and I am passionate about business-driven ICT, how IT can be used to make organizations grow, innovate and expand. The areas of my interest are Cyber Security, Data Analytics, Cloud Services, Networking, Machine Learning and Artificial Intelligence.</p>
+                    <p>I would like to constantly upgrade my technical and analytical capabilities and acquire practical skills that would equip me with future perspectives in the IT field. I hope to become a professional who does not just know technology but is able to use technology to the benefit of the business to grow and make a difference.</p>
+                </div>
+                <div class="about-image">
+                    [Your Photo Here]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project">
+        <div class="container">
+            <h2>My Project</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-image">Portfolio Website</div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>The first project I did was a personal portfolio web site to demonstrate my skills, academic background, and professional interests. It has provided me with an opportunity to use my knowledge in HTML, CSS and JavaScript, and to concentrate on design, user experience and content strategy. I got into the project with business perspective of IT so that the site could render my professional worth and future development.</p>
+                        <p>This project helped me acquire a hands-on practice in launching a web site with the help of GitHub Pages, creating a clean and responsive design, and laying out information well. This portfolio is a demonstration of my present abilities and a framework that will expand as I do, which will accommodate future academic projects, personal educational experiences, and professional successes.</p>
+                        <p>It also gives me a platform to assist in my future growth, where I would improve my studies, improve application skills in internships, and demonstrate my skills to the prospective career in the field of IT.</p>
+                        <div class="project-links">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Basic IT Skills</h3>
+                    <p>My background knowledge is in IT (basics of web development (HTML, CSS, JavaScript), a little bit of networking, working with data, and an understanding of cloud services). These competencies give them a solid technical foundation to pursue a higher level of technology in future.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Business Skills</h3>
+                    <p>I have gained project planning, business analysis and IT- business integration skills. This will enable me to have a business-oriented attitude towards technology undertakings so that the IT solutions promote organizational growth and strategy.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <p>I pay attention to such soft skills as communication, team work, problem solving, adaptability and ongoing learning, which allow me to work with others efficiently and overcome difficulties.</p>
+                </div>
+            </div>
+            <div style="margin-top: 40px; text-align: center;">
+                <h3>Growth and Opportunities in Future</h3>
+                <p>These technical, business and soft skills combined would help me greatly in my future growth. They will make me successful in my studies, be able to contribute during the internship and exploit career opportunities in the IT sector. With constant use and development of these skills, I hope to become a professional who can integrate technology and business to bring about significant changes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact">
-        <div>Mail: <a href="mailto:yogesh.poudel@example.com">yogesh.poudel@example.com</a></div>
-        <div style="margin-left:auto;color:rgba(17,24,39,0.6)">© <span id="year"></span> Yogesh</div>
-      </div>
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">@</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>yogesh.poudel@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">in</div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/yogeshpoudel</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">GH</div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/yogeshpoudel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="color: var(--white);">Y &lt;/&gt; YOGESH POUDEL</div>
+            <p>CODE. CREATE. CONNECT.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">in</a>
+                <a href="#" class="social-link">GH</a>
+                <a href="#" class="social-link">f</a>
+                <a href="#" class="social-link">@</a>
+            </div>
+            <p>&copy; 2023 Yogesh Poudel. All rights reserved.</p>
+        </div>
+    </footer>
 
 
 </body>
