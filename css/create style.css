@@ -353,7 +353,7 @@
                 padding: 180px 0 80px;
             }
         }
-    </style>
+   
 #clock {
     position: static;
     margin: 10px 0;
@@ -365,3 +365,4 @@
     align-items: center;
     gap: 10px;
   }
+</style>
