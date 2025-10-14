@@ -598,3 +598,16 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+#clock {
+    position: static;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
