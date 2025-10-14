@@ -1,14 +1,4 @@
-#clock {
-    position: static;
-    margin: 10px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+
 <style>
         :root {
             --primary: #1D4ED8;
@@ -364,3 +354,14 @@
             }
         }
     </style>
+#clock {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
