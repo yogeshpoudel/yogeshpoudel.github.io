@@ -263,43 +263,18 @@
       transform: translateY(-3px);
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-      }
-
-      .hero-img img {
-        margin-bottom: 2rem;
-      }
-
-      nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-<nav>
-  <ul class="navbar">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#project">Project</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
 
 /* ===== Clock (Top Left Corner) ===== */
 #clock {
   position: fixed;
   top: 15px;
-  left: 20px;
+  left: 22px;
   background: var(--primary-color);
   color: white;
   padding: 8px 14px;
   border-radius: 8px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 1px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   z-index: 200;
