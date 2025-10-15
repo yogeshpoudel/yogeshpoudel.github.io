@@ -85,22 +85,34 @@ header {
 
 /* ---- Hero Section ---- */
 .hero {
+  background-color: var(--white);
+  color: var(--primary);
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-  color: var(--white);
+  padding: 120px 20px;
+  transition: all 0.4s ease;
 }
 
 .hero h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: var(--primary);
+  transition: color 0.3s ease;
 }
 
 .hero p {
   font-size: 18px;
   max-width: 800px;
   margin: 10px auto;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+/* subtle hover animation for the heading */
+.hero h1:hover {
+  color: var(--secondary);
+  transform: scale(1.03);
 }
 
 /* ---- About Section ---- */
