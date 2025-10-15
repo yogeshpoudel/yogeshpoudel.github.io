@@ -327,7 +327,3 @@ footer p {
   transition: all 0.3s ease;
 }
 
-#clock:hover {
-  color: #FFFFFF; /* White on hover */
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
-  transform: scale(1.05);
