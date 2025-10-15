@@ -280,10 +280,9 @@
       }
     }
 #clock {
-    position: fixed;
+    position: static;
     margin: 10px 0;
-    text-align: Right;
-      color:red;
+    text-align: left;
   }
   
   nav ul {
