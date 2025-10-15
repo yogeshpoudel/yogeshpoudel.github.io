@@ -330,3 +330,14 @@ footer p {
     align-items: center;
     gap: 10px;
   }
+#clock {
+  position: static;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #dc2626;            
+  font-family: 'Courier New', monospace; 
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
+  letter-spacing: 2px;
+}
