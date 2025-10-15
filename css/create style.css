@@ -263,7 +263,22 @@
       transform: translateY(-3px);
     }
 
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
 
+      .hero-img img {
+        margin-bottom: 2rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
 #clock {
     position: fixed;
     margin: 10px 0;
@@ -276,4 +291,3 @@
     align-items: center;
     gap: 10px;
   }
-
