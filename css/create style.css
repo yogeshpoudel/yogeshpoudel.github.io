@@ -279,14 +279,48 @@
         justify-content: center;
       }
     }
+<nav>
+  <ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+/* ===== Clock (Top Left Corner) ===== */
 #clock {
-    position: static;
-    margin: 10px 0;
-    text-align: left;
-  }
-  
-  nav ul {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 200;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#clock:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    text-align: center;
   }
+  header {
+    padding: 15px 30px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+}
