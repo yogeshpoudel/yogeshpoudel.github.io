@@ -1,4 +1,5 @@
 
+
 /* ---- Google Fonts ---- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Montserrat:wght@600&family=Lato:wght@400&family=Open+Sans:wght@300&display=swap');
 
@@ -306,7 +307,6 @@ footer p {
     width: 90%;
   }
 }
-
 #clock {
     position: static;
     margin: 10px 0;
