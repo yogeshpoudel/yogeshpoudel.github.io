@@ -320,24 +320,20 @@ footer p {
   }
 }
 #clock {
-    position: static;
-    margin: 10px 0;
-    text-align: left;
-  }
-  
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-#clock {
   position: static;
   margin: 10px 0;
   text-align: left;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #dc2626;            
-  font-family: 'Courier New', monospace; 
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
-  letter-spacing: 2px;
+  font-size: 1.5rem;                 /* slightly larger for readability */
+  font-weight: 700;                  /* bold for contrast */
+  color: #14B8A6;                    /* teal – perfect contrast on blue */
+  font-family: 'Courier New', monospace; /* digital-style font */
+  letter-spacing: 2px;               /* spaced out for clean look */
+  text-shadow: 0 0 8px rgba(20, 184, 166, 0.6); /* subtle teal glow */
+  transition: all 0.3s ease;
+}
+
+#clock:hover {
+  color: #FBBF24;                    /* soft golden-yellow hover */
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.8);
+  transform: scale(1.05);
 }
