@@ -43,7 +43,7 @@ img {
 header {
   background: var(--primary);
   color: var(--white);
-  padding: 15px 0;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 10;
